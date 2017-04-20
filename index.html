@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- try themes from: https://startbootstrap.com/-->
+    <!-- <link rel="stylesheet" type="text/css" href="theme.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme2.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme3.css"> -->
+    <!--<link rel="stylesheet" type="text/css" href="theme4.css">-->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+
+    <!-- use this style for testing and development purposes -->
+    <style type="text/css">
+        .container {
+            border: 2px dotted green;
+        }
+        
+        .row {
+            border: 1px dotted red;
+        }
+        
+        .row [class*=' col-'] {
+            border: 2px dotted purple;
+        }
+        
+        .jumbotron {
+            background-image: url(http://www.desktopimages.org/preview/get_photo/25086/1920/1080);
+            background-size: cover;
+            background-position: middle;
+            height: 80vh;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1>Singapore</h1>
+        <p>i make nice things</p>
+        <a href="http://stckup.sg/" class="btn btn-primary">how it works</a>
+    </div>
+
+    <!-- this container is to hold EVERYTHING-->
+    <div class="container">
+
+        <div class="row">
+            <!--row 1: jumbotron-->
+
+            <div class="col-xs-12
+            col-sm-12
+            col-md-12
+            col-lg-12">
+
+                <!--<div class="jumbotron">
+                    <h1>janet's page</h1>
+                    <p>i make nice things</p>
+                    <a href="http://stckup.sg/" class="btn btn-primary">click me</a>
+                </div>-->
+                <!--end of first row-->
+
+
+                <!-- row2: thumbnail-->
+                <div class="row">
+
+                    <!-- row2 col1:thumbnail 1-->
+                    <div class="col-xs-12
+                col-sm-4
+                col-md-4
+                col-lg-4">
+                        <div class="thumbnail">
+                            <img src="https://tse3.mm.bing.net/th?id=OIP.wcszePPCsCJnH-NK0g59awEsDI&pid=15.1">
+                            <div class="caption">
+
+                                <h3>title</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quidem, quos cumque, dignissimos inventore eveniet
+                                    laboriosam ab quaerat sunt, illo id ipsum culpa atque veritatis placeat possimus obcaecati
+                                    optio delectus.
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row2 col2:thumbnail 2-->
+                    <div class="col-xs-12
+                col-sm-4
+                col-md-4
+                col-lg-4">
+                        <div class="thumbnail">
+                            <img src="https://tse3.mm.bing.net/th?id=OIP.wcszePPCsCJnH-NK0g59awEsDI&pid=15.1">
+                            <div class="caption">
+
+                                <h3>title</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quidem, quos cumque, dignissimos inventore eveniet
+                                    laboriosam ab quaerat sunt, illo id ipsum culpa atque veritatis placeat possimus obcaecati
+                                    optio delectus.
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- row2 col3:thumbnail 3-->
+                    <div class="col-xs-12
+                col-sm-4
+                col-md-4
+                col-lg-4">
+                        <div class="thumbnail">
+                            <img src="https://tse3.mm.bing.net/th?id=OIP.wcszePPCsCJnH-NK0g59awEsDI&pid=15.1">
+                            <div class="caption">
+
+                                <h3>title</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quidem, quos cumque, dignissimos inventore eveniet
+                                    laboriosam ab quaerat sunt, illo id ipsum culpa atque veritatis placeat possimus obcaecati
+                                    optio delectus.
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- row3: col1:video-->
+                <div class="row">
+                    <div class="col-xs-12
+            col-sm-12
+            col-md-12
+            col-lg-12">
+
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2Pmm3lLrcTI"></iframe>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- row 4: col1:form-->
+                <div class="row">
+                    <div class="col-xs-12 
+                                col-sm-6 
+                                col-md-6 
+                                col-lg-6">
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+
+                                <form action="https://coderinyou-1332.appspot.com/submit" method="post">
+
+                                    <legend> Apply Here </legend>
+                                    <div class="form-group">
+                                        <label for="fname-id">First Name</label>
+                                        <input id="fname-id" class="form-control" type="text" name="app2FName" placeholder="what's your name" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="lname-id">Last Name</label>
+                                        <input id="lname-id" class="form-control" type="text" name="app2LName" placeholder="type your last name here" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email-id">email</label>
+                                        <input id="lname-id" class="form-control" type="email" name="app2Email" placeholder="Enter your email address" required>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                            Option one is this and that&mdash;be sure to include why it's great
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                            Option two can be something else and selecting it will deselect option one
+                                        </label>
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <!-- row 4: col2:text-->
+
+                    <div class="col-xs-12 
+                                col-sm-6 
+                                col-md-6 
+                                col-lg-6">
+
+                        <h1> Text Title </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolores ullam, praesentium explicabo atque esse blanditiis similique
+                            ipsum consequatur, ipsam dolorem maiores, minima eius nobis nisi provident tempora sequi odio!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- row5 col1:table-->
+                <div class="row">
+                    <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">
+
+                        <table class="table">
+                            <tr>
+                                <th>Day</th>
+                                <th>Hours</th>
+                            </tr>
+                            <tr>
+                                <td>Monday to Thursday</td>
+                                <th>9am - 5pm</th>
+                            </tr>
+                            <tr>
+                                <th>Sunday</th>
+                                <th>closed</th>
+                            </tr>
+                        </table>
+                    </div>
+
+
+                    <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">
+                        <!--https://goo.gl/XcyFWL-->
+                        <!-- 4:3 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-4by3 wow fadeOut">
+                            <iframe class="embed-responsive-item" src="https://goo.gl/XcyFWL"></iframe>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="http//google.com"><i class="fa fa-home fa-fw" ></i> email</li>
+                            <li class="list-group-item"><i class="fa fa-pencil fa-fw"></i>phone</li>
+                            <li class="list-group-item">address</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-xs-12">
+
+                            <ul class="list-inline text-center">
+                                <li>
+                                    <a href="http://facebook.com">
+                                        <i class="fa fa-handshake-o fa-5x"></i>
+                                    </a>
+                            </li>
+
+                            <li>
+                                <a href="http://facebook.com">
+                                    <i class="fa fa-shopping-basket fa-5x"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="http://facebook.com">
+                                    <i class="fa fa-handshake-o fa-5x"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- to disable sticking bar to screen, remove class: navbar-fixed-top -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <!-- hamburger button. do not touch! -->
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                        <!-- HOME BUTTON: REPLACE href="#" with your landing page url -->
+                        <a class="navbar-brand" href="#">
+                            <!-- PUT BRAND LOGO / ICON HERE (instead of font-awesome -->
+                            <i class="fa fa-telegram"></i>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <!-- THIS UL HANDLES OUR LINKS -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="http://facebook.com">facebook</a></li>
+                            <li><a href="http://facebook.com">facebook2</a></li>
+                            <!-- to make more links, make some <li> in here -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+            <!-- end of container>
+            </div>
+            
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<!-- jquery -->
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+            <!-- bootstrap js -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+            <script>
+                new WOW().init();
+            </script>
+</body>
+
+</html>
